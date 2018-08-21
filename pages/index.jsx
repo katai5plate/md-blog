@@ -7,7 +7,11 @@ export default () => (
             color: "white",
             backgroundColor: "cyan"
         }}>
-            <h1><a href="https://github.com/katai5plate/md-blog">GitHub Page</a></h1>
+            <h1>
+                <a href="https://github.com/katai5plate/md-blog">
+                    GitHub: katai5plate/ md-blog
+                </a>
+            </h1>
         </nav>
         <Markdown source={articles[0].content} />
     </div>
