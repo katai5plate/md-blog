@@ -1,6 +1,7 @@
 import React from 'react';
 import Markdown from 'react-markdown';
 import articles from "../markdown/markdown.json";
+
 export default () => (
     <div>
         <nav style={{
@@ -13,6 +14,17 @@ export default () => (
                 </a>
             </h1>
         </nav>
-        <Markdown source={articles[0].content} />
+        {
+            articles.reduce((p, c) => {
+                return [...p, (
+                    <div>
+                        <p style={{
+                            backgroundColor: "yellow"
+                        }}>{c.name}</p>
+                        <Markdown source={c.content} />
+                    </div>
+                )];
+            }, [])
+        }
     </div>
 )
