@@ -8,7 +8,7 @@
   "scripts": {
     "start": "next",
     "convert": "node convert",
-    "build": "yarn convert && yarn build && yarn export"
+    "build": "npm run convert && npm run build && npm run export"
   },
   "dependencies": {
     "fs-extra": "^7.0.0",
