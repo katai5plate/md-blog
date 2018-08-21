@@ -6,7 +6,7 @@ yarn convert
 yarn start
 ```
 ## deploy
-- https://ecstatic-haibt-51c038.netlify.com/
+- https://md-blog-experiments.netlify.com/
 - export to `out/`
 ```
 yarn build
