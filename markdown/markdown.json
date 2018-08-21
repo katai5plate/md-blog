@@ -1,0 +1,10 @@
+[
+  {
+    "name": "fixed/about.md",
+    "content": "# ようこそ！\r\n## Had2Appsとは？\r\n- 「はどはど」と「オレオ」によるインディーズゲーム制作サークルです。\r\n\r\n## MEMBER\r\n- Had2Appsは、はどはど・オレオの２人でやってるサークルです。\r\n\r\n### はどはど　HADHAD\r\n- プロダクト、ディレクション、プログラム、サウンド担当\r\n- 記事へのコメントでは「Had2Apps」として返します。\r\n\r\n### オレオ　OLEO\r\n- ドット絵、コンセプトプラン、モンスターデザイン担当\r\n- 記事へのコメントでは「オレオ」として返します。\r\n　\r\n## Youtubeもやってます！\r\n- はどっぽいチャンネル\r\n- https://www.youtube.com/user/had2chan"
+  },
+  {
+    "name": "article/2018061701.md",
+    "content": "# ツクールMVでスクリーンショットを撮る方法\r\nこれから紹介するスクリーンショットの撮影は、ツクールのテスプレイ時に使うことができます。\r\n\r\nいつもゲームの公開時にスクリーンショットを撮るのが面倒くさい！ってときにどうぞ\r\n\r\n## このスクリプトを入力\r\nテストプレイ中にF8キーを押したときに出てくるコンソールに以下のコードをコピペしてEnterしましょう。\r\n\r\n```js\r\n(function(){\r\n    var now = (function(n){return(`${n.getFullYear()}${`0${n.getMonth()+1}`.slice(-2)}${`0${n.getDate()}`.slice(-2)}${`0${n.getHours()}`.slice(-2)}${`0${n.getMinutes()}`.slice(-2)}${`0${n.getSeconds()}`.slice(-2)}${`00${n.getMilliseconds()}`.slice(-3)}`)})(new Date());\r\n    var fn = `${document.URL.replace(\"file:///\",\"\").split(\"index.html\")[0]}ss_${now}.png`;\r\n    require('nw.gui').Window.get().capturePage(function(buf){\r\n        require('fs').writeFile(fn,buf,function(e){\r\n            if(e) throw e;\r\n            var mes = `ScreenShot is saved!\\n${fn}`\r\n            alert(mes); console.log(mes);\r\n        });\r\n    },{format:'png',datatype:'buffer'});\r\n})();\r\n```\r\nするとうまくいけば、ダイアログが出てくるとともに、プロジェクトフォルダに画像が保存されているはずです！\r\n\r\n## ゲームへの埋め込みも可能！\r\n\r\nこのソースコードは、テストプレイ時や、node web-kitが同梱している環境でしか動作しませんが、一応上のスクリプトをマップイベントのスクリプトコマンドに貼り付けても、同様の効果が得られます。\r\n\r\n**デプロイメントしたゲームでは動かない可能性が高いので注意！**\r\n"
+  }
+]
