@@ -1,11 +1,11 @@
 
 import Common from './common';
-import ArticleList from '../components/ArticleList';
+import Top from './top';
 
 import "../style.css";
 
 export default () => (
   <Common>
-    <ArticleList />
+    <Top />
   </Common>
 )

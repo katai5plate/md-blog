@@ -8,15 +8,15 @@
       "head": "Q.A.",
       "items": [
         {
-          "href": "/",
+          "href": "/blog/fixed/qa",
           "name": "よくある質問"
         },
         {
-          "href": "/",
+          "href": "/blog/fixed/rule_video",
           "name": "ゲームの利用規約"
         },
         {
-          "href": "/",
+          "href": "/blog/fixed/rule_material",
           "name": "素材の利用規約"
         }
       ]
@@ -25,15 +25,15 @@
       "head": "ゲーム",
       "items": [
         {
-          "href": "/",
+          "href": "/blog/fixed/rule_video",
           "name": "ゲームの利用規約"
         },
         {
-          "href": "/",
+          "href": "/blog/fixed/game",
           "name": "ゲーム・アプリ"
         },
         {
-          "href": "/",
+          "href": "/blog/fixed/",
           "name": "リリースノート"
         }
       ]
@@ -42,11 +42,11 @@
       "head": "テクニック集",
       "items": [
         {
-          "href": "/",
+          "href": "/blog/fixed/",
           "name": "RPGツクールMV"
         },
         {
-          "href": "/",
+          "href": "/blog/fixed/",
           "name": "JavaScript"
         }
       ]
@@ -55,15 +55,15 @@
       "head": "素材",
       "items": [
         {
-          "href": "/",
+          "href": "/blog/fixed/rule_material",
           "name": "素材の利用規約"
         },
         {
-          "href": "/",
+          "href": "/blog/fixed/",
           "name": "フリー素材"
         },
         {
-          "href": "/",
+          "href": "/blog/fixed/",
           "name": "リリースノート"
         }
       ]
@@ -72,11 +72,11 @@
       "head": "コンタクト",
       "items": [
         {
-          "href": "/",
+          "href": "/blog/fixed/contakt",
           "name": "連絡先"
         },
         {
-          "href": "/",
+          "href": "https://twitter.com/katai5plate",
           "name": "Twitter"
         }
       ]
@@ -85,19 +85,23 @@
       "head": "リンク",
       "items": [
         {
-          "href": "/",
-          "name": "ブックマーク"
+          "href": "https://twitter.com/katai5plate",
+          "name": "Twitter"
         },
         {
-          "href": "/",
+          "href": "https://www.youtube.com/user/had2chan",
           "name": "YouTube"
         },
         {
-          "href": "/",
+          "href": "https://soundcloud.com/h5p",
           "name": "SoundCloud"
         },
         {
-          "href": "/",
+          "href": "https://github.com/katai5plate",
+          "name": "GitHub"
+        },
+        {
+          "href": "https://www65.atwiki.jp/japanfreegame/",
           "name": "Japan-Free-Game"
         }
       ]

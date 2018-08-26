@@ -2,6 +2,7 @@ const fs = require("fs-extra");
 const path = require("path");
 
 const __markdownDir = "markdown";
+const __outputDir = "data";
 
 const __markdownCategories = [
   "fixed",
@@ -37,5 +38,7 @@ const __markdownCategories = [
       }
     }
   }
-  await fs.writeFile(`${__markdownDir}/markdown.json`, JSON.stringify(output, null, "  "));
+  const outfname = `${__outputDir}/markdown.json`;
+  await fs.writeFile(outfname, JSON.stringify(output, null, "  "));
+  console.log(`GENERATED ${outfname}`);
 })()
