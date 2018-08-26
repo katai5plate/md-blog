@@ -1,6 +1,7 @@
 import React from 'react';
 import Markdown from 'react-markdown';
 import articles from "../markdown/markdown.json";
+import CodeBlock from "./CodeBlock";
 
 export default () => (
   <div>
@@ -17,11 +18,16 @@ export default () => (
     {
       articles.reduce((p, c) => {
         return [...p, (
-          <div>
+          <div key={c.name}>
             <p style={{
               backgroundColor: "yellow"
             }}>{c.name}</p>
-            <Markdown source={c.content} />
+            <Markdown
+              source={c.content}
+              renderers={{
+                code: CodeBlock
+              }}
+            />
           </div>
         )];
       }, [])

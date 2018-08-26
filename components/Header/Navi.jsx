@@ -11,10 +11,10 @@ export default () => (
       </Navbar.Brand>
     </Navbar.Header>
     <Nav>{
-      contents.list.map(elem => (
-        <NavDropdown title={elem.head}>{
-          elem.items.map(item => (
-            <MenuItem href={item.href}>{
+      contents.list.map((elem, index) => (
+        <NavDropdown title={elem.head} key={index} id={elem.head} >{
+          elem.items.map((item, i) => (
+            <MenuItem href={item.href} key={i} id={item.name}>{
               item.name
             }</MenuItem>
           ))
