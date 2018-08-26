@@ -1,4 +1,5 @@
 const fs = require("fs-extra");
+const path = require("path");
 
 const __markdownDir = "markdown";
 
@@ -17,6 +18,7 @@ const __markdownCategories = [
       const fstat = await fs.statSync(fpath);
       if (fstat.isFile()) {
         const name = `${category}/${file}`;
+        const pname = path.parse(name);
         const data = await fs.readFile(fpath, { encoding: 'utf8' });
         const content = data.replace(data.match(/---[\s\S]*?---[\n|\r\n]/)[0], "");
         const metadata = data.match(/---[\n|\r\n]([\s\S]*?)[\n|\r\n]---/)[1];
@@ -24,10 +26,10 @@ const __markdownCategories = [
           const d = c.split(": ");
           return { ...p, ...{ [d[0]]: d[1] } };
         }, [])
-        console.log({ meta })
         console.log(`ADD ${name}`);
         output = [...output, {
-          name,
+          name: pname.name,
+          dirname: pname.dir,
           content,
           meta,
         }]
