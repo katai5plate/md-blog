@@ -9,7 +9,7 @@
     "start": "next",
     "convert": "node convert",
     "build": "yarn convert && next build && next export",
-    "build:safe": "timeout -sKILL 1 yarn build"
+    "build:safe": "timeout -sKILL 60 yarn build"
   },
   "dependencies": {
     "fs-extra": "7.0.0",
