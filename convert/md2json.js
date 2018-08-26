@@ -29,7 +29,8 @@ const __markdownCategories = [
         console.log(`ADD ${name}`);
         output = [...output, {
           name: pname.name,
-          dirname: pname.dir,
+          metaName: name,
+          dirName: pname.dir,
           content,
           meta,
         }]
