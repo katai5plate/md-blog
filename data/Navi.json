@@ -1,0 +1,106 @@
+{
+  "title": {
+    "name": "TOP",
+    "href": "/"
+  },
+  "list": [
+    {
+      "head": "Q.A.",
+      "items": [
+        {
+          "href": "/",
+          "name": "よくある質問"
+        },
+        {
+          "href": "/",
+          "name": "ゲームの利用規約"
+        },
+        {
+          "href": "/",
+          "name": "素材の利用規約"
+        }
+      ]
+    },
+    {
+      "head": "ゲーム",
+      "items": [
+        {
+          "href": "/",
+          "name": "ゲームの利用規約"
+        },
+        {
+          "href": "/",
+          "name": "ゲーム・アプリ"
+        },
+        {
+          "href": "/",
+          "name": "リリースノート"
+        }
+      ]
+    },
+    {
+      "head": "テクニック集",
+      "items": [
+        {
+          "href": "/",
+          "name": "RPGツクールMV"
+        },
+        {
+          "href": "/",
+          "name": "JavaScript"
+        }
+      ]
+    },
+    {
+      "head": "素材",
+      "items": [
+        {
+          "href": "/",
+          "name": "素材の利用規約"
+        },
+        {
+          "href": "/",
+          "name": "フリー素材"
+        },
+        {
+          "href": "/",
+          "name": "リリースノート"
+        }
+      ]
+    },
+    {
+      "head": "コンタクト",
+      "items": [
+        {
+          "href": "/",
+          "name": "連絡先"
+        },
+        {
+          "href": "/",
+          "name": "Twitter"
+        }
+      ]
+    },
+    {
+      "head": "リンク",
+      "items": [
+        {
+          "href": "/",
+          "name": "ブックマーク"
+        },
+        {
+          "href": "/",
+          "name": "YouTube"
+        },
+        {
+          "href": "/",
+          "name": "SoundCloud"
+        },
+        {
+          "href": "/",
+          "name": "Japan-Free-Game"
+        }
+      ]
+    }
+  ]
+}
