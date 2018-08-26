@@ -1,15 +1,11 @@
-import { Grid, Row, Col } from 'react-bootstrap';
 
-import Meta from '../components/Meta';
-import Header from '../components/Header';
+import Common from './common';
 import ArticleList from '../components/ArticleList';
 
+import "../style.css";
+
 export default () => (
-  <div>
-    <Meta />
-    <Grid>
-      <Header />
-      <ArticleList />
-    </Grid>
-  </div>
+  <Common>
+    <ArticleList />
+  </Common>
 )
