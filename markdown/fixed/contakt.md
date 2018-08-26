@@ -13,4 +13,6 @@ title: 連絡先
 
 # Twitterでのお問い合わせ
 
-## [Twitterへ](https://twitter.com/intent/tweet?screen_name=katai5plate)
+```dangerouslysetinnerhtml
+<a href="https://twitter.com/intent/tweet?screen_name=katai5plate" class="twitter-mention-button" data-show-count="false">Tweet to @katai5plate</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```

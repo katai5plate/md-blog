@@ -25,7 +25,9 @@ const __markdownCategories = [
         const metadata = data.match(/---[\n|\r\n]([\s\S]*?)[\n|\r\n]---/)[1];
         const meta = metadata.split(/[\n|\r\n]/).reduce((p, c) => {
           const d = c.split(": ");
-          return { ...p, ...{ [d[0]]: d[1] } };
+          let [k, v] = [d[0], d[1]];
+          if (k === "tag") v = v.split(",");
+          return { ...p, ...{ [k]: v } };
         }, [])
         console.log(`ADD ${name}`);
         output = [...output, {
@@ -39,6 +41,6 @@ const __markdownCategories = [
     }
   }
   const outfname = `${__outputDir}/markdown.json`;
-  await fs.writeFile(outfname, JSON.stringify(output, null, "  "));
+  await fs.writeFile(outfname, JSON.stringify(output));
   console.log(`GENERATED ${outfname}`);
 })()

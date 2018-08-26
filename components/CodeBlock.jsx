@@ -1,7 +1,19 @@
-export default props => (
-  <pre className={`prettyprint linenums lang-${props.language}`}>
-    <code>
-      {props.value}
-    </code>
-  </pre>
-)
+export default props => {
+  const { language, value } = props;
+  switch (language) {
+    case "dangerouslysetinnerhtml": {
+      return (
+        <div dangerouslySetInnerHTML={{ __html: value }} />
+      )
+    };
+    default: {
+      return (
+        <pre className={`prettyprint linenums lang-${language}`}>
+          <code>
+            {value}
+          </code>
+        </pre>
+      )
+    };
+  }
+}
