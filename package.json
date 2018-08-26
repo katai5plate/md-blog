@@ -8,7 +8,8 @@
   "scripts": {
     "start": "next",
     "convert": "node convert",
-    "build": "yarn convert && next build && next export"
+    "build": "yarn convert && next build && next export",
+    "build:safe": "timeout -sKILL 1 yarn build"
   },
   "dependencies": {
     "fs-extra": "7.0.0",
