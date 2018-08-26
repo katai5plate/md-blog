@@ -62,4 +62,4 @@ typings/
 
 out/
 markdown.json
-pages/articles/**
+pages/blog/**

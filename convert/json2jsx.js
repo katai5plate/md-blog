@@ -1,7 +1,7 @@
 const fs = require("fs-extra");
 
 const __inFile = "markdown/markdown.json";
-const __outDir = "pages/articles";
+const __outDir = "pages/blog";
 
 
 (async () => {
